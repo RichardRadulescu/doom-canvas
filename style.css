@@ -1,0 +1,38 @@
+:root {
+    --primary-bg-color: #393E46;
+    --canvas-bg-color: #222831;
+}
+ 
+body {
+    margin: 0;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: screen;
+    opacity: 0.3;
+    z-index: -1;
+}
+ 
+#Doom {
+ 
+    background-color: var(--canvas-bg-color);
+    border-radius: 16px;
+    border: 1px solid #202429;
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.8),
+        0 10px 20px rgba(0, 0, 0, 0.5);
+}
